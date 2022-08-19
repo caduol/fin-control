@@ -5,12 +5,12 @@
     :placeholder="placeholder"
     :value="value"
     v-on="inputListeners"
-  >
+  />
 </template>
 
 <script>
 export default {
-  name: 'AppFormInput',
+  name: "AppFormInput",
 
   props: {
     value: {
@@ -23,7 +23,7 @@ export default {
     },
     type: {
       type: String,
-      default: 'text',
+      default: "text",
     },
   },
 
@@ -42,10 +42,11 @@ export default {
   computed: {
     inputListeners() {
       const vm = this;
+
       return {
         ...this.$listeners,
         input(event) {
-          vm.$emit('input', event.target.value);
+          vm.$emit("input", event.target.value);
         },
       };
     },

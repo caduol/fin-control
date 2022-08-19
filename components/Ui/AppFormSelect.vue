@@ -6,9 +6,9 @@
     <option value="">Selecione</option>
     <option
       v-for="option in options"
-      :key="option.name"
-      :value="option.name"
-      :selected="value === option.name"
+      :key="option.id"
+      :value="option.id"
+      :selected="value === option.id"
     >
       {{ option.name }}
     </option>
@@ -16,36 +16,36 @@
 </template>
 
 <script>
-  export default {
-    name: 'AppFormSelect',
+export default {
+  name: "AppFormSelect",
 
-    props: {
-      value: {
-        type: [String, Number, Object, Boolean],
-        default: undefined,
-      },
-      options: {
-        type: Array,
-        default: () => [],
-      },
+  props: {
+    value: {
+      type: [String, Number, Object, Boolean],
+      default: undefined,
     },
+    options: {
+      type: Array,
+      default: () => [],
+    },
+  },
 
-    data() {
-      return {
-        localValue: this.value,
-      };
-    },
+  data() {
+    return {
+      localValue: this.value,
+    };
+  },
 
-    watch: {
-      value(value) {
-        this.localValue = value;
-      },
+  watch: {
+    value(value) {
+      this.localValue = value;
     },
+  },
 
-    methods: {
-      onChange($evt) {
-        this.$emit('input', $evt.target.value);
-      }
+  methods: {
+    onChange($evt) {
+      this.$emit("input", $evt.target.value);
     },
-  };
+  },
+};
 </script>
