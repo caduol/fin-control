@@ -10,7 +10,7 @@
     {
       "id": 2,
       "description": "Curso Laravel PRO",
-      "amount": 19.9,
+      "amount": 19.90,
       "date": "2022-01-01",
       "categoryId": 1
     },
@@ -55,41 +55,6 @@
       "amount": 100,
       "date": "2022-01-15",
       "categoryId": 5
-    },
-    {
-      "date": "2022-08-25",
-      "amount": "221",
-      "description": "teste",
-      "categoryId": "Equipamentos de TI, assinatura de softwares e cursos",
-      "id": 9
-    },
-    {
-      "date": "2022-08-25",
-      "amount": "221",
-      "description": "teste",
-      "categoryId": "Equipamentos de TI, assinatura de softwares e cursos",
-      "id": 10
-    },
-    {
-      "date": "2022-08-25",
-      "amount": "221",
-      "description": "teste",
-      "categoryId": "Equipamentos de TI, assinatura de softwares e cursos",
-      "id": 11
-    },
-    {
-      "date": "",
-      "amount": 0,
-      "description": "",
-      "categoryId": "1",
-      "id": 12
-    },
-    {
-      "date": "2022-08-20",
-      "amount": "300",
-      "description": "massagem",
-      "categoryId": "4",
-      "id": 13
     }
   ],
   "categories": [
