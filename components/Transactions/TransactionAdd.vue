@@ -69,7 +69,14 @@ export default {
   },
   methods: {
     addTransaction() {
-      this.$store.dispatch("transactions/addTransaction", this.form);
+      this.$store
+        .dispatch("transactions/addTransaction", this.form)
+        .then((res) => {
+          this.$emit("after-add", {
+            ...res,
+            category: this.categories.find((o) => o.id == this.form.categoryId),
+          });
+        });
     },
     onCancel() {
       this.$emit("cancel");
