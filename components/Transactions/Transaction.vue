@@ -77,6 +77,7 @@
             ></path>
           </svg>
         </button>
+        <TransactionEdit v-if="isUpdating" />
       </div>
     </div>
   </div>
@@ -94,6 +95,11 @@ export default {
       type: Object,
       default: () => ({}),
     },
+  },
+  data() {
+    return {
+      isUpdating: false,
+    };
   },
 };
 </script>
